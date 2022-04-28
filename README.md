@@ -48,7 +48,7 @@ from flask import Flask, request, jsonify
 } 
   ```
  
-## Comprobation
+## Validation
 
 Create a Test Web-HTTP Alert pointing your Server Webhook in advanced settings configure this Test to send "GET" requests.
 the script is listening "GET" requests and randomly responding with HTTP status codes:
