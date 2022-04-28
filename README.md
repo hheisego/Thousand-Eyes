@@ -36,7 +36,7 @@ from flask import Flask, request, jsonify
   Create an Slack Application > [Webhook](https://api.slack.com/messaging/webhooks)
   Get Thousand Eyes [API Authorization](https://developer.thousandeyes.com/v6/#/authentication)
   
-  Fill the secrets.json file with your own Thousand Eyes information, Slack Information Optional (Webex) and place this secrets file in the python file root folder.
+  Fill the secrets.json file with your own Thousand Eyes information, Slack Information and optional (Webex) information. Place secrets.json file where the python file root folder is located.
   
   ```json
 {
