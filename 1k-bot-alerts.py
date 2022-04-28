@@ -28,7 +28,7 @@ http_codes = [200, 201, 202, 206, 401, 402, 403, 404, 408, 500, 503]
 class ThousandEyesAlert:
 
     slack_webhook = get_env_var("slack_webhook")
-    thousand_url = "https://"+ get_env_var("thousand_user") + get_env_var("thousand_baerer") +"@api.thousandeyes.com/v6/"
+    thousand_url = "https://" + get_env_var("thousand_user") + get_env_var("thousand_baerer") + "@api.thousandeyes.com/v6/"
 
 
     def get_tests(self):
@@ -46,7 +46,6 @@ class ThousandEyesAlert:
 
         send_msg_slack = requests.post(url=self.slack_webhook, json=msg)
 
-        print(send_msg_slack.status_code)
         return send_msg_slack.status_code
 
     def send_msg_webex(self, msg):
